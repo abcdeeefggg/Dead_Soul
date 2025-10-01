@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dead_soul",
+	"version": "${version}",
+	"name": "Dead Soul",
+	"description": "XD /n I am a description,hello dead soul world! /n awa Falling Into The Abyss",
+	"authors": [
+		"'XD' YueGe Waves 'Me!'"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dead_soul/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.yuege_waves.dead_soul.DeadSoul"
+		],
+		"fabric-datagen": [
+			"com.yuege_waves.dead_soul.DeadSoulDataGenerator"
+		],
+      "client": [
+        "com.yuege_waves.dead_soul.DeadSoulClient"
+      ]
+	},
+	"mixins": [
+		"dead_soul.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
